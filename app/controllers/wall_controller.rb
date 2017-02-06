@@ -3,7 +3,7 @@ class WallController < ApplicationController
   end
 
 	def write_complete
-		p = Post.new
+	p = Post.new
 		p.name = params[:writer]
 		p.content = params[:content]
 		if p.save
