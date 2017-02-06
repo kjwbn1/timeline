@@ -5,7 +5,7 @@
 	<h4><%= flash[:alert] %></h4>
 		<h3 style="color: blue;"><%= post.name %></h3>
 		<p><%= post.content %></p>
-		<p style="font-size: 90%; text-align: right;"><a href="/wall/edit/<%= post.id %>">edit</a></p>
+		<p style="font-size: 90%; text-align: right;"><a href="/wall/write_comment/<%= post.id %>comment</a><a href="/wall/edit/<%= post.id %>">edit</a></p>
 	</div><br>
 	<% end %>
 	<a href="/wall/write">Write post again</a>
