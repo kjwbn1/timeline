@@ -42,3 +42,9 @@ class UserController < ApplicationController
 		end
 	end
 end
+
+	def logout
+		cookies.delete(:user_id)
+		redirect_to :back
+	end
+end
